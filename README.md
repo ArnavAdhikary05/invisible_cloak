@@ -1,6 +1,13 @@
 # Invisible Cloak
 
-A Python project that uses computer vision to create an invisible cloak effect by detecting and removing a colored cloth from video.
+A Python project that uses computer vision and color detection to create an invisible cloak effect. By capturing the HSV color values of a cloth and applying real-time background substitution, this project makes the cloth appear invisible in video footage, revealing whatever is behind it.
+
+## How It Works
+
+The invisible cloak effect is achieved through HSV (Hue, Saturation, Value) color space detection:
+1. **Color Capture** - Records the exact color range of your cloth
+2. **Real-time Detection** - Identifies pixels matching that color in the video stream
+3. **Background Replacement** - Replaces detected pixels with the background, making the cloth invisible
 
 ## Workflow
 
